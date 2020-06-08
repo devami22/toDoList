@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 30px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.count {
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  outline: solid 2px #FFAD0A;
+  background-color: #FFC95C;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  height: 50px;
+  width: 100%;
+  padding: 6px;
+  margin-top: 10px;
+  font-size: 2.4em;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  border: 0;
+  padding: 0;
+  background-color: white;
+}
+
+
+li {
+  border: 0;
+  overflow: hidden;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  padding-left: 25px;
+  background-color: #CEDEDE;
+  color: #545F64;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.task-comp {
+  text-decoration: line-through;
+}
+
+li:before {
+  content: "\200B";
+  position: absolute;
+}
+
+li::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+li button {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0.5em;
+  float: right;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  background-color: #F84312;
+  color: white;
+  font-size: 0.75em;
+  box-shadow: 
+    3px 3px 4px 0 rgba(0, 0, 0, 0.25),
+    -2px -2px 3px 0 rgba(255, 255, 255, 0.3);
+}
+
+li button:hover {
+  background-color: #9E2605;
+}
+
+.comp-btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0.5em;
+  float: right;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  background-color: #7CB518;
+  color: white;
+  font-size: 0.75em;
+  box-shadow: 
+    3px 3px 4px 0 rgba(0, 0, 0, 0.25),
+    -2px -2px 3px 0 rgba(255, 255, 255, 0.3);
+}
+
+.comp-btn:hover {
+  background-color: #5C8001;
+}
+
+.todos {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+

@@ -4,13 +4,21 @@
   box-sizing: border-box;
 }
 
+/* Fonts:
+  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Architects Daughter', cursive;
+*/
+
+
 body {
   font-family: 'Architects Daughter', cursive;
   font-size: 16px;
 }
 
 h1 {
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Lora', serif;
   font-size: 30px;
   margin-bottom: 0;
   font-weight: 600;
@@ -28,7 +36,7 @@ label {
 input {
   outline: solid 2px #FFAD0A;
   background-color: #FFC95C;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Architects Daughter', cursive;
   font-weight: 200;
   height: 50px;
   width: 100%;
@@ -43,6 +51,11 @@ ul {
   border: 0;
   padding: 0;
   background-color: white;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
 }
 
 
@@ -115,8 +128,13 @@ li button:hover {
   background-color: #5C8001;
 }
 
+.count {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
 .todos {
   width: 800px;
   margin: 0 auto;
   margin-top: 40px;
-
+};

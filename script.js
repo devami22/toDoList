@@ -52,7 +52,6 @@ const deleteTodo = (e) => {
     loadTodos();
 } 
 
-
 const loadTodos = () => {
     todoList.innerHTML = "";
 
@@ -61,9 +60,9 @@ const loadTodos = () => {
         const btnDlt = document.createElement("button");
         const btnDone = document.createElement("button");
         btnDone.className = "comp-btn";
-        btnDlt.textContent = " Remove ";
+        btnDlt.textContent = "Delete 🚫";
         btnDlt.addEventListener("click", deleteTodo);
-        btnDone.textContent = " Complete ";
+        btnDone.textContent = "Done! ✅";
         btnDone.addEventListener("click", () => {
             li.classList.toggle('task-comp');
         });

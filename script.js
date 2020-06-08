@@ -16,6 +16,7 @@ todoForm.addEventListener("submit", (event) => {
     event.preventDefault();
     // This prevents the form from being submitted if the field is empty - hence preventDefault function is used.
     const todoText = todoInput.value.trim();
+    todoInput.value = "";
     // This creates a variable with the function to remove excess spaces in the to-do entry field
     if (todoText === "") {
         alert("The todo can not be empty");
@@ -64,9 +65,9 @@ const loadTodos = () => {
         btnDlt.addEventListener("click", deleteTodo);
         btnDone.textContent = " Complete ";
         btnDone.addEventListener("click", () => {
-            li.className = 'task-comp';
+            li.classList.toggle('task-comp');
         });
-        li.addEventListener("click", deleteTodo);
+        //li.addEventListener("click", deleteTodo);
         li.textContent = todo;
         li.appendChild(btnDlt);
         li.appendChild(btnDone);
